@@ -1,4 +1,51 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem 1fr 5rem;
+  height: 100vh;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eceff4;
+  box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 10%);
+  padding: 0.5rem;
+}
+.brand img {
+  height: 8rem;
+}
+.header-links a {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  color: #fe0074;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222222;
+  color: #eceff4;
 }
